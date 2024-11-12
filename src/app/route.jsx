@@ -4,6 +4,7 @@ import QuizPage from "@/pages/QuizPage";
 import AuthPage from "@/pages/AuthPage";
 import ResultPage from "@/pages/ResultPage";
 import Loading from "@/shared/Loading/ui/Loading";
+
 const Routing = () => {
   return (
     <>
