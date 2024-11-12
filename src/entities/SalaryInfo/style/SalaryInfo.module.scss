@@ -1,0 +1,142 @@
+@import "../../../shared/styles/variubles.scss";
+
+.SalaryInfo {
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  margin: 20px 0;
+  &__newbie {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 10px;
+    img {
+      width: 30px;
+      margin-bottom: 5px;
+    }
+  }
+  &__professional {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    @media screen and (max-width:1035px) {
+      margin-bottom: 0;
+    }
+    img {
+      width: 30px;
+      margin-bottom: 5px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__card {
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    height: 370px;
+    background: $default;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 26px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10 0px;
+    @media screen and (max-width:1035px) {
+      height: 400px;
+    }
+    @media screen and (max-width:954px) {
+      height: 330px;
+    }
+    @media screen and (max-width:777px) {
+      height: 350px;
+    }
+    @media screen and (max-width:722px) {
+      height: 300px;
+    }
+    @media screen and (max-width:486px) {
+      height: 340px;
+    }
+    @media screen and (max-width:404px) {
+      height: 400px;
+    }
+    strong {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 800;
+      margin-top: 5px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 30px;
+    width: 250px;
+    @media screen and (max-width: 1035px) {
+      bottom: 15px;
+    }
+  }
+
+  &__card h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7b7777;
+    padding: 5px 0 0 10px;
+  }
+  &__swiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+
+    padding: 0px 0 5px;
+    border-radius: 42px;
+    text-align: center;
+  }
+}
+.custom-nav-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+
+  &:hover {
+    background-color: $btn-background;
+    color: $default;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+}
+.swiper-button-prev::after {
+  font-size: 18px;
+}
+.swiper-button-next::after {
+  font-size: 18px;
+}

@@ -1,0 +1,142 @@
+@import "../../../shared/styles/variubles.scss";
+
+.StrongSides {
+  padding: 56px 0 26px;
+  @media screen and (max-width:1030px) {
+    padding: 40px 0 10px;
+  }
+  &__content {
+    position: relative;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+  }
+
+  &__card {
+    padding: 20px;
+    background: $default;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 934px) {
+      display: grid;
+    }
+    @media screen and (max-width:445px) {
+      padding: 10px;
+    }
+
+    img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      margin: 0 auto;
+      @media screen and (max-width: 934px) {
+        width: 100%;
+        height: 400px;
+      }
+    }
+    h3 {
+      margin: 35px 0 20px;
+      font-size: 32px;
+      font-weight: 600;
+      text-align: start;
+      
+
+      @media screen and (max-width:934px) {
+      
+        margin:10px 0 ;
+      }
+      @media screen and (max-width:547px) {
+        font-size: 28px;
+      }
+      @media screen and (max-width:487px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width:411px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width:351px) {
+        font-size: 18px;
+      }
+    }
+    h4 {
+      margin: 15px 0 0;
+      font-size: 22px;
+      font-weight: 600;
+      text-align: start;
+      @media screen and (max-width:420px) {
+        font-size: 19px !important;
+      }
+    }
+    p {
+      text-align: start;
+      padding-left: 10px;
+      padding: 5px 0 10px 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #7b7777;
+
+      @media screen and (max-width:390px) {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  &__h3 {
+    @media screen and (max-width: 934px) {
+      display: none;
+    }
+  }
+  &__h3Adaptive {
+    display: none;
+    @media screen and (max-width:934px) {
+      display: block;
+    }
+  }
+  &__ul{
+    @media screen and (max-width:934px) {
+      padding-top: 20px;
+    }
+  }
+}
+.profession-image {
+  text-align: center;
+}
+.StrongSides__skill__card h4 span {
+  font-weight: bold;
+
+}
+
+.StrongSides__skills ul {
+  list-style-type: disc;
+  padding: 0;
+
+}
+
+.StrongSides__skill__card {
+  margin-bottom: 10px;
+}
+
+.StrongSides__skill__card h4 {
+  display: inline;
+}
+.StrongSides__skill__card p {
+  margin: 0;
+}
+.StrongSides__skill__card p {
+  text-align: start;
+  padding: 5px 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7b7777;
+  margin-left: 35px;
+  @media screen and (max-width:380px) {
+    margin-left: 20px;
+  }
+}

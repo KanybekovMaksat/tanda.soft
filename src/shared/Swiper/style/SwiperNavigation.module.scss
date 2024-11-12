@@ -1,0 +1,42 @@
+@import "../../styles/variubles.scss";
+.SwiperNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+
+  padding: 0px 0 5px;
+  border-radius: 42px;
+  text-align: center;
+}
+.custom-nav-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 50%;
+  position: relative;
+
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+
+  &:hover {
+    background-color: $btn-background;
+    color: $default;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  font-size: 18px;
+}

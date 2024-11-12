@@ -1,0 +1,96 @@
+@import "../../../shared/styles/variubles.scss";
+.Question {
+  padding: 0 20px;
+  max-width: 968px;
+  margin: 0 auto;
+  padding-top: 30px;
+  min-height: 100vh;
+  @media screen and (max-width:327px){
+    padding: 20px 0;
+  }
+  &__progress  {
+    background-color: $btn-background;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s;
+  }
+  &__border {
+    label {
+      max-width: 870px;
+      border-radius: 16px;
+      padding: 20px 0 20px 30px;
+      width: 100%;
+
+      margin-top: 20px;
+      background: $background-test;
+      @media screen and (max-width: 685px) {
+        padding: 15px 0 15px 20px;
+      }
+    }
+    label:hover {
+      transition: background 0.15s ease-in-out;
+      background: rgb(235, 235, 235);
+    }
+  }
+  &__content {
+    background: $default;
+    padding: 24px 48px 31px 63px;
+    border-radius: 30px;
+    @media screen and (max-width: 683px) {
+      padding: 24px 30px 31px 43px;
+    }
+    @media screen and (max-width: 449px) {
+      padding: 24px 20px 31px 43px;
+    }
+  }
+  h2 {
+    color: $text-color;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Roboto;
+    @media screen and (max-width: 757px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 587px) {
+      font-size: 25px;
+    }
+  }
+  &__polosa {
+    width: 264px;
+    background-color: #e0e0e0;
+    height: 12px;
+    border-radius: 10px;
+    margin: 0 0 9px;
+    @media screen and (max-width: 389px) {
+      width: 180px;
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    justify-content: center;
+    padding-bottom: 20px;
+    @media screen and (max-width: 389px) {
+      column-gap: 15px;
+    }
+    p {
+      color: #7b7b7b;
+      font-weight: 600;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 37px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 539px) {
+      margin-top: 15px;
+      gap: 10px;
+      padding: 10px 40px;
+    }
+  }
+}

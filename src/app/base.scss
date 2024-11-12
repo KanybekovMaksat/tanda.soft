@@ -1,0 +1,61 @@
+@import "../shared/styles/variubles.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #4f4f4f;
+  background: $background-test;
+}
+body *::-moz-selection {
+  background: $btn-background;
+  color: $default;
+}
+
+body *::-webkit-selection {
+  background: $btn-background;
+  color: $default;
+}
+
+body *::selection {
+  background: $btn-background;
+  color: $default;
+}
+h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 15px;
+}
+h2 {
+  color: black;
+  @media screen and (max-width: 495px) {
+    font-size: 1.8rem !important;
+  }
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+ul,
+li {
+  list-style: none;
+}

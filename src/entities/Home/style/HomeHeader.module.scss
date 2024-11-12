@@ -1,0 +1,11 @@
+@import "../../../shared/styles/variubles.scss";
+.Home {
+    &__logo h3 {
+      color: $btn-background;
+      font-size: 30px;
+      font-weight: 800;
+      font-weight: "Roboto";
+      padding: 20px 0 40px 20px;
+    }
+    
+}
