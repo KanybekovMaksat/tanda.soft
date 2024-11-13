@@ -20,13 +20,14 @@
     "echarts": "^5.5.1",
     "echarts-for-react": "^3.0.2",
     "mui-tel-input": "^6.0.1",
+    "node-sass": "^9.0.0",
     "path": "^0.12.7",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "recharts": "^2.12.7",
-    "sass": "^1.79.4",
+    "sass": "^1.80.7",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
